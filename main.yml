@@ -103,3 +103,8 @@
 
     - name: Restart skhd
       command: /usr/local/bin/brew services restart skhd
+
+    - name: Install Spotify
+      homebrew_cask:
+        name: spotify
+        state: present

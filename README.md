@@ -9,8 +9,8 @@ This repository is meant to be executed on fresh macOS instance.
 Open default terminal application and execute `start.sh` script:
 
 ```
-# chmod +x script.sh
-# ./script.sh
+# chmod +x start.sh
+# ./start.sh
 ```
 
 # Software

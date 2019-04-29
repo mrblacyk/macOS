@@ -1,0 +1,105 @@
+---
+- hosts: all
+  connection: local
+
+  tasks:
+    - name: Install Homebrew
+      shell: |
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+    - name: Update Homebrew
+      homebrew:
+        update_homebrew: yes
+
+    - name: Install Python3
+      homebrew:
+        name: python3
+        state: present
+
+    - name: Install iTerm2
+      homebrew_cask:
+        name: iterm2
+        state: present
+
+    - name: Install Sublime
+      homebrew_cask:
+        name: sublime-text
+        state: present
+
+    - name: Install Package Control (Sublime)
+      get_url: 
+        url: https://packagecontrol.io/Package%20Control.sublime-package
+        dest: ~/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package
+
+    - name: Install Anaconda (Sublime)
+      shell: |
+        cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+        git clone https://github.com/DamnWidget/anaconda
+        mv *naconda Anaconda
+
+    - name: Install Zsh
+      homebrew:
+        name: zsh
+        state: present
+
+    - name: Install Oh My Zsh
+      shell: |
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+    - name: Change theme (Oh My Zsh)
+      shell: |
+        sed -E -i "" 's/ZSH_THEME=".*"/ZSH_THEME="ys"/' ~/.zshrc
+
+    - name: Install Chrome
+      homebrew_cask:
+        name: google-chrome
+        state: present
+
+    - name: Add homebrew tap
+      homebrew_tap:
+        name: crisidev/homebrew-chunkwm,koekeishiya/formulae
+        state: present
+
+    - name: Install chunkwm
+      homebrew:
+        name: chunkwm
+        state: present
+
+    - name: Copy chunkwm config
+      shell: |
+        cp .chunkwmrc ~/
+
+    - name: Install skhd (chunkwm)
+      homebrew:
+        name: koekeishiya/formulae/skhd
+        state: present
+    
+    - name: Copy chunkwm config
+      shell: |
+        cp .skhdrc ~/
+
+    - name: Install tmux
+      homebrew:
+        name: tmux
+        state: present
+
+    - name: Install Dropbox
+      homebrew_cask:
+        name: dropbox
+        state: present
+
+    - name: Install Telegram
+      homebrew_cask:
+        name: telegram
+        state: present
+
+    - name: Install KeePassXC
+      homebrew_cask:
+        name: keepassxc
+        state: present
+
+    - name: Restart chunkwm
+      command: /usr/local/bin/brew services restart chunkwm
+
+    - name: Restart skhd
+      command: /usr/local/bin/brew services restart skhd

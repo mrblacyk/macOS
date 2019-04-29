@@ -21,17 +21,17 @@
         name: iterm2
         state: present
 
-    - name: Install Sublime
+    - name: Install Sublime 3
       homebrew_cask:
         name: sublime-text
         state: present
 
-    - name: Install Package Control (Sublime)
+    - name: Install Package Control (Sublime 3 module)
       get_url: 
         url: https://packagecontrol.io/Package%20Control.sublime-package
         dest: ~/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package
 
-    - name: Install Anaconda (Sublime)
+    - name: Install Anaconda (Sublime 3 module)
       shell: |
         cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
         git clone https://github.com/DamnWidget/anaconda
@@ -69,14 +69,20 @@
       shell: |
         cp .chunkwmrc ~/
 
-    - name: Install skhd (chunkwm)
+    - name: Restart chunkwm
+      command: /usr/local/bin/brew services restart chunkwm
+
+    - name: Install skhd
       homebrew:
         name: koekeishiya/formulae/skhd
         state: present
     
-    - name: Copy chunkwm config
+    - name: Copy skhd config
       shell: |
         cp .skhdrc ~/
+
+    - name: Restart skhd
+      command: /usr/local/bin/brew services restart skhd
 
     - name: Install tmux
       homebrew:
@@ -97,12 +103,6 @@
       homebrew_cask:
         name: keepassxc
         state: present
-
-    - name: Restart chunkwm
-      command: /usr/local/bin/brew services restart chunkwm
-
-    - name: Restart skhd
-      command: /usr/local/bin/brew services restart skhd
 
     - name: Install Spotify
       homebrew_cask:

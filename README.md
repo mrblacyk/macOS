@@ -15,8 +15,8 @@ Open default terminal application and execute `start.sh` script:
 
 Bash script will install:
 
-* `pip`
-* `ansible`
+* [`pip`](https://github.com/pypa/pip)
+* [`ansible`](https://github.com/ansible/ansible)
 
 Ansible playbook will install:
 

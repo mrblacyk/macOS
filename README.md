@@ -38,7 +38,7 @@ Ansible playbook installs:
 * [`KeePassXC`](https://github.com/keepassxreboot/keepassxc)
 * [`Spotify`](https://www.spotify.com/pl/)
 
-The playbook will also change zsh theme (`ys`), copy chunkwm and skhd configs tu user directory.
+The playbook will also change zsh theme to `ys`, copy `.chunkwm` and `.skhd` configs tu user directory.
 
 # skhd - shortcuts
 

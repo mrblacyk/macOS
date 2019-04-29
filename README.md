@@ -11,7 +11,7 @@ Open default terminal application and execute `start.sh` script:
 # ./script.sh
 ```
 
-# What will install
+# Software
 
 Bash script will install:
 

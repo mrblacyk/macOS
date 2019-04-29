@@ -1,6 +1,6 @@
 # README
 
-This repository is meant to be executed on new macOS instance.
+This repository is meant to be executed on fresh macOS instance.
 
 ---
 
@@ -38,9 +38,9 @@ Ansible playbook installs:
 * [`KeePassXC`](https://github.com/keepassxreboot/keepassxc)
 * [`Spotify`](https://www.spotify.com/pl/)
 
-The playbook will also change zsh theme to `ys`, copy `.chunkwm` and `.skhd` configs tu user directory.
+The playbook will also change zsh theme to `ys`, copy `.chunkwm` and `.skhd` configs tu user directory and restart `chunkwm` and `skhd` services.
 
-# skhd - shortcuts
+# skhd - shortcuts for chunkwm
 
 ## General 
 

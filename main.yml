@@ -108,3 +108,8 @@
       homebrew_cask:
         name: spotify
         state: present
+
+    - name: Install LuLu
+      homebrew_cask:
+        name: lulu
+        state: present

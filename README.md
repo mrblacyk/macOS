@@ -37,6 +37,7 @@ Ansible playbook installs:
 * [`Telegram`](https://github.com/TelegramOrg/Telegram-desktop)
 * [`KeePassXC`](https://github.com/keepassxreboot/keepassxc)
 * [`Spotify`](https://www.spotify.com/pl/)
+* [`LuLu`](https://github.com/objective-see/LuLu)
 
 The playbook will also change zsh theme to `ys`, copy `.chunkwm` and `.skhd` configs tu user directory and restart `chunkwm` and `skhd` services.
 

@@ -42,6 +42,10 @@ ctrl + cmd - 1  : chunkc tiling::window --send-to-monitor 1; chunkc tiling::moni
 ctrl + cmd - 2  : chunkc tiling::window --send-to-monitor 2; chunkc tiling::monitor -f 2
 ctrl + cmd - 3  : chunkc tiling::window --send-to-monitor 3; chunkc tiling::monitor -f 3
 
+# send wiondow to desktop
+ctrl + cmd - p : chunkc tiling::window --send-to-desktop prev
+ctrl + cmd - n : chunkc tiling::window --send-to-desktop next
+
 # increase region size
 shift + alt - a : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge west
 shift + alt - s : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge south

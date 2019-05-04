@@ -80,6 +80,11 @@ The playbook will also change zsh theme to `ys`, copy `.chunkwm` and `.skhd` con
 * <kbd>shift</kbd> + <kbd>alt</kbd> + <kbd>k</kbd> - swap window north
 * <kbd>shift</kbd> + <kbd>alt</kbd> + <kbd>l</kbd> - swap window east
 
+## Send window to screen
+
+<kbd>ctrl</kbd> + <kbd>cmd</kbd> + <kbd>n</kbd> - send window to next screen
+<kbd>ctrl</kbd> + <kbd>cmd</kbd> + <kbd>p</kbd> - send window to prev screen
+
 ## Send window to monitor
 
 * <kbd>ctrl</kbd> + <kbd>cmd</kbd> + <kbd>1</kbd> - send window to 1 monitor and follow focus

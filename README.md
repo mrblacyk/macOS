@@ -82,8 +82,8 @@ The playbook will also change zsh theme to `ys`, copy `.chunkwm` and `.skhd` con
 
 ## Send window to screen
 
-<kbd>ctrl</kbd> + <kbd>cmd</kbd> + <kbd>n</kbd> - send window to next screen
-<kbd>ctrl</kbd> + <kbd>cmd</kbd> + <kbd>p</kbd> - send window to prev screen
+* <kbd>ctrl</kbd> + <kbd>cmd</kbd> + <kbd>n</kbd> - send window to next screen
+* <kbd>ctrl</kbd> + <kbd>cmd</kbd> + <kbd>p</kbd> - send window to prev screen
 
 ## Send window to monitor
 

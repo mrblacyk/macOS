@@ -4,7 +4,7 @@
 cmd - return : open -a iTerm ~
 
 # kill chunkwm when something brakes (automatically should restart)
-cmd + ctrl + w : killall chunkwm
+cmd + ctrl - w : killall chunkwm
 
 # close focused window
 cmd + alt - w : chunkc tiling::window --close # focus window

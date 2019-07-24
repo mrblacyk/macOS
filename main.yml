@@ -57,20 +57,20 @@
 
     - name: Add homebrew tap
       homebrew_tap:
-        name: crisidev/homebrew-chunkwm,koekeishiya/formulae
+        name: koekeishiya/formulae
         state: present
 
-    - name: Install chunkwm
+    - name: Install yabai
       homebrew:
-        name: chunkwm
+        name: yabai
         state: present
 
-    - name: Copy chunkwm config
+    - name: Copy yabai config
       shell: |
-        cp .chunkwmrc ~/
+        cp .yabai ~/
 
-    - name: Restart chunkwm
-      command: /usr/local/bin/brew services restart chunkwm
+    - name: Restart yabai
+      command: /usr/local/bin/brew services restart yabai
 
     - name: Install skhd
       homebrew:

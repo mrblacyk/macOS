@@ -26,8 +26,8 @@ Ansible playbook installs:
 * [`Python3`](https://github.com/python/cpython)
 * [`iTerm2`](https://github.com/gnachman/iTerm2)
 * [`Sublime 3`](https://www.sublimetext.com/3)
-* [`Package Control (Sublime 3 module)`](https://github.com/wbond/package_control)
-* [`Anaconda (Sublime 3 module)`](https://github.com/DamnWidget/anaconda)
+* <strike>[`Package Control (Sublime 3 module)`](https://github.com/wbond/package_control)</strike>
+* <strike>[`Anaconda (Sublime 3 module)`](https://github.com/DamnWidget/anaconda)</strike>
 * [`Zsh`](http://www.zsh.org/)
 * [`Oh My Zsh`](https://github.com/robbyrussell/oh-my-zsh)
 * [`yanai`](https://github.com/koekeishiya/yabai)

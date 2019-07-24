@@ -26,16 +26,16 @@
         name: sublime-text
         state: present
 
-    - name: Install Package Control (Sublime 3 module)
-      get_url: 
-        url: https://packagecontrol.io/Package%20Control.sublime-package
-        dest: ~/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package
+    # - name: Install Package Control (Sublime 3 module)
+    #   get_url: 
+    #     url: https://packagecontrol.io/Package%20Control.sublime-package
+    #     dest: ~/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package
 
-    - name: Install Anaconda (Sublime 3 module)
-      shell: |
-        cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
-        git clone https://github.com/DamnWidget/anaconda
-        mv *naconda Anaconda
+    # - name: Install Anaconda (Sublime 3 module)
+    #   shell: |
+    #     cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+    #     git clone https://github.com/DamnWidget/anaconda
+    #     mv *naconda Anaconda
 
     - name: Install Zsh
       homebrew:

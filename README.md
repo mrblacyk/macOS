@@ -39,7 +39,7 @@ Ansible playbook installs:
 * [`Spotify`](https://www.spotify.com/pl/)
 * [`LuLu`](https://github.com/objective-see/LuLu)
 
-The playbook will also change zsh theme to `ys`, copy `.yabai` and `.skhd` configs tu user directory and restart `yabai` and `skhd` services.
+The playbook will also change zsh theme to `ys`, copy `.yabairc` and `.skhdrc` configs tu user directory and restart `yabai` and `skhd` services.
 
 # skhd - shortcuts for yabai
 

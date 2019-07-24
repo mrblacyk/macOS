@@ -31,6 +31,10 @@ ctrl + cmd - 1  : yabai -m window --display 1; yabai -m display --focus 1
 ctrl + cmd - 2  : yabai -m window --display 2; yabai -m display --focus 2
 ctrl + cmd - 3  : yabai -m window --display 3; yabai -m display --focus 3
 
+# move window to space
+ctrl + cmd - p : yabai -m window --space prev; yabai -m space --focus prev
+ctrl + cmd - n : yabai -m window --space next; yabai -m space --focus next
+
 # rotate tree
 alt + cmd - r : yabai -m space --rotate 90
 

@@ -30,7 +30,7 @@ Ansible playbook installs:
 * [`Anaconda (Sublime 3 module)`](https://github.com/DamnWidget/anaconda)
 * [`Zsh`](http://www.zsh.org/)
 * [`Oh My Zsh`](https://github.com/robbyrussell/oh-my-zsh)
-* [`chunkwm`](https://github.com/koekeishiya/chunkwm)
+* [`yanai`](https://github.com/koekeishiya/yabai)
 * [`skhd`](https://github.com/koekeishiya/skhd)
 * [`tmux`](https://github.com/tmux/tmux)
 * [`Dropbox`](https://www.dropbox.com/)

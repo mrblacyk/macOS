@@ -67,7 +67,7 @@
 
     - name: Copy yabai config
       shell: |
-        cp .yabai ~/
+        cp .yabairc ~/
 
     - name: Restart yabai
       command: /usr/local/bin/brew services restart yabai
